@@ -40,15 +40,44 @@ Create a list of steps and define validation logic for each step. Use the `FormW
 
 ```typescript
 import React from "react";
+import { FormWizard } from "nextjs-form-wizard";
+import { faUser, faCog, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const steps = [
-  { label: "Step 1", icon: "icon1", content: <div>Step 1 content</div> },
-  { label: "Step 2", icon: "icon2", content: <div>Step 2 content</div> },
-  { label: "Step 3", icon: "icon3", content: <div>Step 3 content</div> },
+  {
+    label: "Personal details",
+    icon: faUser,
+    content: (
+      <div>
+        <h2>First Tab</h2>
+        <p>Some content for the first tab</p>
+      </div>
+    ),
+  },
+  {
+    label: "Additional Info",
+    icon: faCog,
+    content: (
+      <div>
+        <h2>Second Tab</h2>
+        <p>Some content for the second tab</p>
+      </div>
+    ),
+  },
+  {
+    label: "Last step",
+    icon: faCheck,
+    content: (
+      <div>
+        <h2>Third Tab</h2>
+        <p>Some content for the third tab</p>
+      </div>
+    ),
+  },
 ];
 
 const validateStep = (step: number) => {
-  // Add validation logic for each step
+  // Add validation logic for each step here
   return true; // Replace with actual validation logic
 };
 
@@ -85,7 +114,7 @@ export default MyForm;
 
 | Prop            | Type                                                                             | Description                                                                 |
 | --------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| `steps`         | `{ label: string; icon: string; content: ReactNode }[]`                          | Array of objects defining each step in the form wizard.                     |
+| `steps`         | `{ label: string; icon: IconDefinition; content: ReactNode }[]`                  | Array of objects defining each step in the form wizard.                     |
 | `validateStep`  | `(step: number) => boolean`                                                      | Function to validate each step before allowing navigation to the next step. |
 | `customButtons` | `(currentStep: number, nextStep: () => void, prevStep: () => void) => ReactNode` | Custom navigation buttons component.                                        |
 | `initialStep`   | `number`                                                                         | Initial step index to start the wizard (default: `0`).                      |
@@ -100,6 +129,6 @@ Contributions are welcome! Fork the repository, make your changes, and submit a 
 
 ### Issues
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](<[link-to-your-issues-page](https://github.com/zemmelmootez/nextjs-form-wizard/issues)>) on GitHub.
+If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/zemmelmootez/nextjs-form-wizard/issues) on GitHub.
 
 ---
