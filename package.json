@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-form-wizard",
-  "version": "1.0.0",
+  "name": "next-form-wizard",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,16 @@
       "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     }
   },
-  "keywords": [],
+ "keywords": [
+    "next.js",
+    "form wizard",
+    "multi-step form",
+    "react",
+    "component",
+    "form validation",
+    "next.js component"
+],
+
   "author": "",
   "license": "ISC",
   "dependencies": {

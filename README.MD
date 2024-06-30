@@ -15,7 +15,7 @@ Next.js Form Wizard is a customizable wizard component for multi-step forms in N
 Install the package using npm:
 
 ```bash
-npm install nextjs-form-wizard
+npm install next-form-wizard
 ```
 
 Or using yarn:
