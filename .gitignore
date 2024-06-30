@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files
+.next/
+out/
+dist/
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
+*.pem
+
+# Next.js specific
+# Uncomment the following lines if your project directory structure includes these files
+# If not, adjust as necessary based on your project setup
+# /public/static/
+# /out/
+# /build/
+# /node_modules/
+# /tmp/
+
+# Ignore local TypeScript build output
+tsconfig.tsbuildinfo
+
+# Ignore npm package-lock.json and yarn.lock files
+package-lock.json
+yarn.lock
