@@ -1,6 +1,6 @@
-# Next.js Form Wizard
+# Next  Form Wizard
 
-Next.js Form Wizard is a customizable wizard component for multi-step forms in Next.js applications. It provides a flexible interface to manage form navigation, validation, and step controls with ease.
+Next  Form Wizard is a customizable wizard component for multi-step forms in Next.js and React applications. It provides a flexible interface to manage form navigation, validation, and step controls with ease.
 
 ## Features
 
@@ -21,17 +21,17 @@ npm install next-form-wizard
 Or using yarn:
 
 ```bash
-yarn add nextjs-form-wizard
+yarn add next-form-wizard
 ```
 
 ## Usage
 
 ### Importing Components and Hooks
 
-Import the `FormWizard` component and `useFormWizard` hook into your Next.js application:
+Import the `FormWizard` component and `useFormWizard` hook into your Next.js Or React js  application:
 
 ```typescript
-import { FormWizard, useFormWizard } from "nextjs-form-wizard";
+import { FormWizard, useFormWizard } from "next-form-wizard";
 ```
 
 ### Example Usage
@@ -40,7 +40,7 @@ Create a list of steps and define validation logic for each step. Use the `FormW
 
 ```typescript
 import React from "react";
-import { FormWizard } from "nextjs-form-wizard";
+import { FormWizard } from "next-form-wizard";
 import { faUser, faCog, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const steps = [
@@ -129,6 +129,6 @@ Contributions are welcome! Fork the repository, make your changes, and submit a 
 
 ### Issues
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/zemmelmootez/nextjs-form-wizard/issues) on GitHub.
+If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/zemmelmootez/next-form-wizard/issues) on GitHub.
 
 ---
