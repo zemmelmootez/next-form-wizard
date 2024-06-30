@@ -100,6 +100,6 @@ Contributions are welcome! Fork the repository, make your changes, and submit a 
 
 ### Issues
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](link-to-your-issues-page) on GitHub.
+If you encounter any issues or have suggestions for improvements, please [open an issue](<[link-to-your-issues-page](https://github.com/zemmelmootez/nextjs-form-wizard/issues)>) on GitHub.
 
 ---
